@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { BrowserRouter } from 'react-router-dom';
+
+//@ts-ignore
+import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 import Buffer from 'buffer';
 //@ts-ignore
 globalThis.Buffer = Buffer;
