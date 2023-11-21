@@ -33,7 +33,10 @@ export default defineConfig({
       ]
     }
   },
-  plugins: [react(), tsconfigPaths()],
+  plugins: [NodeGlobalsPolyfillPlugin({
+    buffer: true
+  })
+    , react(), tsconfigPaths()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
