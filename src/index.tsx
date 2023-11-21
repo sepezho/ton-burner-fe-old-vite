@@ -15,7 +15,7 @@ root.render(
         skipRedirectToWallet: 'ios'
       }}
       manifestUrl={
-        'https://raw.githubusercontent.com/evaafi/tonconnect-config/main/config.json'
+        'https://raw.githubusercontent.com/sepezho/burton-tonconnect-config/main/config.json'
       }>
       <BrowserRouter>
         <App />
