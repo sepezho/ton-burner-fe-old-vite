@@ -6,8 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 //@ts-ignore
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
-import Buffer from 'buffer';
-//@ts-ignore
+import { Buffer } from 'buffer';
 globalThis.Buffer = Buffer;
 (window as any).global = window;
 
